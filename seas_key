@@ -1,0 +1,30 @@
+
+[1mFrom:[0m /home/fortunate-checkpoint-8501/the-bachelor-todo-chicago-web-career-040119/lib/bachelor.rb @ line 2064 Object#get_first_name_of_season_winner:
+
+    [1;34m2060[0m: [32mdef[0m [1;34mget_first_name_of_season_winner[0m(data, season)
+    [1;34m2061[0m:   hash_data = data
+    [1;34m2062[0m:   [1;34m#binding.pry[0m
+    [1;34m2063[0m:   seas_key = season.to_sym
+ => [1;34m2064[0m:   binding.pry
+    [1;34m2065[0m:   hash_data.each {|seazon, contests|
+    [1;34m2066[0m:     [1;34m#binding.pry[0m
+    [1;34m2067[0m:     [32mif[0m seazon == seas_key
+    [1;34m2068[0m:       contests.each {|contest|
+    [1;34m2069[0m:         [32mif[0m contest[[33m:[1;33m"[0m[33mstatus[1;33m"[0m[33m[0m] == [31m[1;31m"[0m[31mWinner[1;31m"[0m[31m[0m
+    [1;34m2070[0m:           name = contest[[33m:[1;33m"[0m[33mname[1;33m"[0m[33m[0m].split([31m[1;31m"[0m[31m [1;31m"[0m[31m[0m)
+    [1;34m2071[0m:           [1;34m#binding.pry[0m
+    [1;34m2072[0m:           [1;34m# puts contest[:"name"][0m
+    [1;34m2073[0m:           [1;34m# return contest[:"name"][0m
+    [1;34m2074[0m:           puts name[[1;34m0[0m]
+    [1;34m2075[0m:           [32mreturn[0m name[[1;34m0[0m]
+    [1;34m2076[0m:         [32melse[0m
+    [1;34m2077[0m:           [32mnext[0m
+    [1;34m2078[0m:         [32mend[0m
+    [1;34m2079[0m:         [1;34m#binding.pry[0m
+    [1;34m2080[0m:       }
+    [1;34m2081[0m:     [32melse[0m
+    [1;34m2082[0m:       [32mnext[0m
+    [1;34m2083[0m:     [32mend[0m
+    [1;34m2084[0m:   }
+    [1;34m2085[0m: [32mend[0m
+
